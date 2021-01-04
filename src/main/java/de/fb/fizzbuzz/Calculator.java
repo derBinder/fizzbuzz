@@ -11,6 +11,7 @@ public class Calculator {
         if (input == 1) {
             return "1";
         }
+        if (isDivisibleBy(input, 3) && isDivisibleBy(input, 5)) return "Fizz-Buzz";
         if (isDivisibleBy(input, 3)) return "Fizz";
         if (isDivisibleBy(input, 5)) return "Buzz";
         return null;
